@@ -27,23 +27,9 @@ class StyleManager:
                 font-family: 'M PLUS Rounded 1c', sans-serif;
             }}
 
-            /* Reset LaTeX equation font to default */
-            .stMarkdown .katex,
-            .stMarkdown .katex *,
-            .stMarkdown .katex-html,
-            .stMarkdown .katex-html *,
-            .stMarkdown .katex-mathml,
-            .stMarkdown .katex-mathml * {{
-                font-family: KaTeX_Main, KaTeX_Math, KaTeX_AMS, 'Times New Roman', serif !important;
-                font-size: 1.21em !important;
-                font-style: normal !important;
-                font-weight: normal !important;
-                font-feature-settings: normal !important;
-                font-variant: normal !important;
-                text-transform: none !important;
-                letter-spacing: normal !important;
-                word-spacing: normal !important;
-                line-height: normal !important;
+            /* Ensure LaTeX equations use their default font */
+            .stMarkdown .katex {{
+                font-family: KaTeX_Main, 'Times New Roman', serif !important;
             }}
             
             .main {{
